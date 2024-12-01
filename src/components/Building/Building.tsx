@@ -10,7 +10,7 @@ const Building = ({ numFloors, numWindows }: BuildingProps): ReactElement => {
   return (
     <div className="building">
       <div className="building__front">
-        {range(1, numFloors + 1).map((num) => {
+        {range(1, numFloors + 1).map(() => {
           return (
             <div className="building__front-floor">
               {range(1, numWindows + 1).map(() => (
